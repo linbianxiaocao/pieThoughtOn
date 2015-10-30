@@ -12,8 +12,6 @@ TIMEZONE = 'America/Toronto'
 
 DEFAULT_LANG = u'en'
 
-THEME = 'pelican-octopress-theme'
-
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -31,7 +29,21 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 8
+DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+STATIC_PATHS = ['images', 'figures', 'downloads']
+
+NOTEBOOK_DIR = 'downloads/notebooks'
+
+# Theme and plugins
+THEME = 'pelican-octopress-theme'
+PLUGIN_PATHS = ['pelican-plugins',]
+PLUGINS = ['summary', 'liquid_tags.notebook']
+
+
+
+
+

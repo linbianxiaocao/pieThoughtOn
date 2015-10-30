@@ -5,9 +5,9 @@ Category: Python
 Tags:
 Slug: rolling-with-pelican
 Authors:
-Summary: Python的用途真是无处不在，包括制作一个github博客。最近读到[Jake VanderPlas](http://www.astro.washington.edu/users/vanderplas/)的博文[Migrating from Octopress to Pelican](https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/)，油然产生了利用Pelican制作一个根正苗红的建立在Python上的博客平台，也在此和基于ruby的Octopress说暂别。
 
 Python的用途真是无处不在，包括制作一个github博客。最近读到[Jake VanderPlas](http://www.astro.washington.edu/users/vanderplas/)的博文[Migrating from Octopress to Pelican](https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/)，油然产生了利用Pelican制作一个根正苗红的建立在Python上的博客平台，也在此和基于ruby的Octopress说暂别。
+<!-- PELICAN_END_SUMMARY -->
 
 Pelican还支持ipython notebook格式(ipynb)，能将博文和Python代码笔记完美结合，没有再好了！
 
@@ -22,7 +22,6 @@ Category:
 Tags:
 Slug: {slug}
 Authors:
-Summary:
 
 
 """

@@ -17,7 +17,6 @@ Category:
 Tags:
 Slug: {slug}
 Authors:
-Summary:
 
 
 """
