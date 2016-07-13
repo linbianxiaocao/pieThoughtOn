@@ -68,10 +68,10 @@ ghp-import可以很轻松的把指定文件夹里的内容import到gh-pages bran
 
 ```
 $ ghp-import output
-$ git push git@github.com:awesomejie/awesomejie.github.io.git gh-pages:master
+$ git push https://github.com:jay8688/jay8688.github.io.git gh-pages:master
 ```
 
-output文件夹下的内容就同步到awesomejie.github.io repository的master branch。
+output文件夹下的内容就同步到jay8688.github.io repository的master branch。
 
 更好的方法是用fabric automate这两步。在fabfile.py底部添加方法
 
@@ -86,7 +86,7 @@ def github(publish_drafts=False): # 2
 
     local('ghp-import output')  # 4
     local('git push '
-          'https://github.com/awesomejie/awesomejie.github.io.git '
+          'https://github.com/jay8688/jay8688.github.io.git '
           'gh-pages:master') # 5
     local('rm -rf output')  # 6
 ```
@@ -97,4 +97,11 @@ Publish到github，只需轻松敲打
 $ fab github
 ```
 
+There would be a problem if the gh-pages branch in your current repo is not in-sync with remote master branch. In this circumstance, the approach above could fail to do the push. You would need to delete your current gh-pages branch and fetch a new one from remote. The publication to github will work then because branch conflicts are effectively resolved in this way.
 
+```
+$ git branch -D gh-pages
+$ git fetch https://github.com/jay8688/jay8688.github.io master:gh-pages
+$ ghp-import output
+$ git push -u https://github.com/jay8688/jay8688.github.io.git gh-pages:master
+```
