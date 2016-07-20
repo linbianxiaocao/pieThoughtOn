@@ -21,3 +21,12 @@ In classifying handwritten digits from the MNIST data set, Michael showed that u
 You would be able to find some popular deep learning software. But according to Google senior fellow Jeff Dean, "There are currently 1500 repositories on GitHub which mention TensorFlow". I will choose TensorFlow for my image classification and object detection task. 
 
 There are good tutorials about TensorFlow. To get hands on experience with constructing convolutional neural network, check out [Deep MNIST for Experts](https://www.tensorflow.org/versions/r0.9/tutorials/mnist/pros/index.html#deep-mnist-for-experts). 
+
+[Here](https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721#.lmkz7nf08) is another good blog I encountered using [TFLearn](http://tflearn.org/), a wrapper around Tensorflow. The author also talked about [Precision and Recall](https://en.wikipedia.org/wiki/Precision_and_recall) metrics that are useful indication of the performance for binary classification. 
+
+####Neural networks for object detection
+Deep-learning based object detection based on deep learning is not as popular as its image classification success. I will point to some papers to get started
+
+- [Paper-CVPR14](http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf) Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik, Rich feature hierarchies for accurate object detection and semantic segmentation, CVPR, 2014. 
+
+By reading on such latest research, I have a feeling that the methods are suitable enough from an academic point of view, but complex enough for immediate need, as fully understanding and implementing those algorithms could require more cycles than we anticipated. The code for object detection with neural network is also not as accessible as that is for classification. While it is necessary to investigate algorithms on frontier research papers to keep up with latest ideas and find potentially good solutions to problem at hand, there are also such commonalities to academic papers from an industry point of view, application scope may be limited, more effort need to be spent in research, implementation could be difficult etc. It looks to me the problem of object detection is still not fully standardized. So we should keep an eye on any development. 
