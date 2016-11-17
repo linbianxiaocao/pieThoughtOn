@@ -1,6 +1,6 @@
 Title: Rolling with Pelican
 Date: 2015-10-28 13:12
-Category: Python
+Category: python
 Tags:
 Slug: rolling-with-pelican
 Authors:

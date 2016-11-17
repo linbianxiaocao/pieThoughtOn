@@ -148,6 +148,6 @@ def github(publish_drafts=False): # 2
 
     local('ghp-import output')  # 4
     local('git push '
-          'https://github.com/jay8688/jay8688.github.io.git '
+          'https://github.com/linbianxiaocao/linbianxiaocao.github.io.git '
           'gh-pages:master') # 5
     local('rm -rf output')  # 6
